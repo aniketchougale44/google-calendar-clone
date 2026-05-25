@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Calendar Clone</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>📅 Google Calendar Clone</h1>
+
+        <button id="addEventBtn">
+            + Add Event
+        </button>
+
+    </div>
+
+    <div id="calendar"></div>
+
+    <!-- EVENT MODAL -->
+
+    <div id="eventModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal">&times;</span>
+
+            <h2>Create Event</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Event Title">
+
+            <textarea
+                id="description"
+                placeholder="Description"></textarea>
+
+            <input
+                type="datetime-local"
+                id="start_time">
+
+            <input
+                type="datetime-local"
+                id="end_time">
+
+            <button id="saveBtn">
+                Save Event
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.17/index.global.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
